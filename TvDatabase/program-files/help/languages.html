@@ -1,0 +1,54 @@
+﻿<html>
+	<head>
+		<title>TV Database Help</title>
+		<link rel="stylesheet" type="text/css" href="style.css">
+	</head>
+	<body>
+		<span class="title">Languages</span><br><br>
+		<span class="subtitle">Overview</span><br>
+		<span class="content">
+			These are the languages spoken throughout the series
+			by the actors (and possibly through means of non-verbal
+			communication). They exist in order to inform potential
+			viewers of whether they would understand the dialogues
+			without subtitles.<br><br>
+			In the application, the languages are indexed in a list
+			in the database, in order to avoid repetitions, but 
+			otherwise have limited practical use.<br><br>
+		</span>
+		<span class="note">
+			Unlike other data types, which are added to the database
+			only when necessary, languages are downloaded at the
+			beginning of the update in bulk, and kept during all times.
+			This however, because of their small number, does not 
+			affect performance in any way.<br><br>
+		</span>
+		<span class="subtitle">In-app attributes</span><br>
+		<ul>
+			<li>
+				<span class="subsubtitle">id</span>
+				<span class="content">
+					- a unique text identifier for the language, which
+					is obtained on update from <a href="http://thetvdb.com">
+					thetvdb.com</a> (not generated locally).
+					Used for safe reference.
+				</span>
+			</li>	
+			<li>
+				<span class="subsubtitle">name</span>
+				<span class="content">
+					- the name of the language, which is displayed in-app.
+				</span>
+			</li>
+		</ul>
+		<span class="note">
+			For more information on how this data is obtained during 
+			update, see the <a href="updater.html">Updater</a> 
+			section.<br><br>
+		</span>
+		<span class="note">
+			You may also go back to the <a href="dataTypes.html">
+			data types</a> section.<br><br>
+		</span>
+	</body>
+</html>

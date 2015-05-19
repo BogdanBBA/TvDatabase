@@ -1,0 +1,62 @@
+body
+{
+	font-family: "Segoe UI Semibold";
+	font-size: 16px;
+	color: #101010;
+}
+
+a, a:visited
+{
+	font-weight: bold;
+	color: #0E3373;
+	text-decoration: none; 
+}
+
+a:hover
+{
+	color: #0160B7;
+}
+
+table.general
+{
+	width: 100%
+	cell-spacing: 0px;
+	cell-padding: 0px;
+}
+
+td.general
+{
+	text-align: center;
+}
+
+.title
+{
+	font-family: "Segoe UI";
+	font-size: 28px;
+	font-weight: bold;
+	color: #0160B7;
+}
+
+.subtitle
+{
+	font-family: "Segoe UI";
+	font-size: 20px;
+	font-weight: bold;
+	color: #74b701;
+}
+
+.subsubtitle
+{
+	font-size: 20px;
+	color: #BD8E00;
+}
+
+.content
+{
+	text-indent: 10px;
+}
+
+.note
+{
+	color: #943A58;
+}

@@ -1,0 +1,12 @@
+<SETTINGS lastSavedCirca="Thu, 14 May 2015, 20:42">
+  <MirrorURL value="http://thetvdb.com/" />
+  <ApiKey value="DF6BA15D91EEF8B7" />
+  <DownloadImagesForSeries value="True" />
+  <DownloadImagesForActors value="True" />
+  <ShowViewMode value="Weekdays" />
+  <ScrollBarPosition value="Right" />
+  <NumberOfSeriesBoxes rows="4" columns="7" />
+  <ShowSeriesTitle value="True" />
+  <ShowSeriesRating value="True" />
+  <ShowSeriesLWE value="True" />
+</SETTINGS>

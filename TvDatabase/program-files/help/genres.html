@@ -1,0 +1,56 @@
+﻿<html>
+	<head>
+		<title>TV Database Help</title>
+		<link rel="stylesheet" type="text/css" href="style.css">
+	</head>
+	<body>
+		<span class="title">Genres</span><br><br>
+		<span class="subtitle">Overview</span><br>
+		<span class="content">
+			These are the stylistic categories that TV series 
+			fall into, and are useful in helping viewers
+			discover new, similar series that they might enjoy.
+			If you like <i>CSI: Crime Scene Investigation</i>, you're 
+			likely to also want to watch <i>NCIS</i>, which are 
+			both categorized as <i>crime</i> and <i>drama</i>.<br><br>
+			In the application, the genres are indexed in a list
+			in the database, in order to avoid repetitions.
+			Genres are referenced by series (more than one genre
+			per series is normal); a new one is  added only when 
+			it is needed, and deleted when no longer referenced.<br><br>
+		</span>
+		<span class="note">
+			Unlike other data types, which are downloaded from 
+			<a href="http://thetvdb.com">thetvdb.com</a> in separate
+			data structures, genres are decoded from a vertical-line
+			separated text, and may therefore present issues if they
+			are not properly formatted on the website.<br><br>
+		</span>
+		<span class="subtitle">In-app attributes</span><br>
+		<ul>
+			<li>
+				<span class="subsubtitle">id</span>
+				<span class="content">
+					- a unique text identifier for the genre, which
+					is generated locally, from a random sequence of characters.
+					Used for safe reference.
+				</span>
+			</li>	
+			<li>
+				<span class="subsubtitle">name</span>
+				<span class="content">
+					- the name of the genre, which is displayed in-app.
+				</span>
+			</li>
+		</ul>
+		<span class="note">
+			For more information on how this data is obtained during 
+			update, see the <a href="updater.html">Updater</a> 
+			section.<br><br>
+		</span>
+		<span class="note">
+			You may also go back to the <a href="dataTypes.html">
+			data types</a> section.<br><br>
+		</span>
+	</body>
+</html>

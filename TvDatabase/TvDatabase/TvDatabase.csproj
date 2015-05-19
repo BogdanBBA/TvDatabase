@@ -1,0 +1,225 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{1DF72F7F-6B7D-40F2-94B5-2DCBAFB4A445}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>TvDatabase</RootNamespace>
+    <AssemblyName>TvDatabase</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>tv2.ico</ApplicationIcon>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Ionic.Zip">
+      <HintPath>..\..\Z. Libraries and such\Ionic.Zip.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Classes\Actors.cs" />
+    <Compile Include="Classes\AuxClasses.cs" />
+    <Compile Include="Classes\BaseClasses.cs" />
+    <Compile Include="Classes\Collections.cs" />
+    <Compile Include="Classes\Database.cs" />
+    <Compile Include="Classes\Episodes.cs" />
+    <Compile Include="Classes\Filters.cs" />
+    <Compile Include="Classes\Genres.cs" />
+    <Compile Include="Classes\Languages.cs" />
+    <Compile Include="Classes\Networks.cs" />
+    <Compile Include="Classes\People.cs" />
+    <Compile Include="Classes\Series.cs" />
+    <Compile Include="Classes\GeneralUtils.cs" />
+    <Compile Include="Classes\SeriesSummary.cs" />
+    <Compile Include="Classes\Settings.cs" />
+    <Compile Include="Classes\Threading.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Classes\UpdateArgument.cs" />
+    <Compile Include="Forms\FAbout.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FAbout.Designer.cs">
+      <DependentUpon>FAbout.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\FEditor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FEditor.Designer.cs">
+      <DependentUpon>FEditor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\FHelp.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FHelp.Designer.cs">
+      <DependentUpon>FHelp.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\FInitialize.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FInitialize.Designer.cs">
+      <DependentUpon>FInitialize.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\FMain.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FMain.Designer.cs">
+      <DependentUpon>FMain.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\FMenu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FMenu.Designer.cs">
+      <DependentUpon>FMenu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\FSeries.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FSeries.Designer.cs">
+      <DependentUpon>FSeries.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\FSettings.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FSettings.Designer.cs">
+      <DependentUpon>FSettings.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\FUpdater.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FUpdater.Designer.cs">
+      <DependentUpon>FUpdater.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="VisualComponents\ActingRoleView.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="VisualComponents\BaseFancyControl.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="VisualComponents\BorderPictureBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="VisualComponents\SeasonEpisodeView.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="VisualComponents\FancyButton.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="VisualComponents\FancyCheckBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="VisualComponents\FancyControlCollections.cs" />
+    <Compile Include="VisualComponents\FancyPanel.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="VisualComponents\FancyProgressBar.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="VisualComponents\FancyTabView.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="VisualComponents\Fonts.cs" />
+    <Compile Include="VisualComponents\SeriesHighlightView.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="VisualComponents\SeriesView.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="VisualComponents\VCCentral.cs" />
+    <EmbeddedResource Include="Forms\FAbout.resx">
+      <DependentUpon>FAbout.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FEditor.resx">
+      <DependentUpon>FEditor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FHelp.resx">
+      <DependentUpon>FHelp.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FInitialize.resx">
+      <DependentUpon>FInitialize.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FMain.resx">
+      <DependentUpon>FMain.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FMenu.resx">
+      <DependentUpon>FMenu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FSeries.resx">
+      <DependentUpon>FSeries.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FSettings.resx">
+      <DependentUpon>FSettings.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FUpdater.resx">
+      <DependentUpon>FUpdater.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="tv2.ico" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
